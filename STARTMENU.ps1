@@ -1,19 +1,19 @@
 function DisplayMenu {
 Write-Host @"
 
-FLASH SÜRÜCÜNÜZÜN HARFİ NEDİR?
-Örneğin D,E,F,G bunlardan birisi olabilir.
+FLASH SÃœRÃœCÃœNÃœZÃœN HARFÄ° NEDÄ°R?
+Ã–rneÄŸin D,E,F,G bunlardan birisi olabilir.
 "@
 
-$MENU = Read-Host "Sürücü harfini yazar mısın?"
+$MENU = Read-Host "SÃ¼rÃ¼cÃ¼ harfini yazar mÄ±sÄ±n?"
 Switch ($MENU) {
 
 D {
 Start "./SGD.bat"
 }
 default {
-#YANLIÅ YAZILIRSA
-Write-Host "Geçerli sürücü belirtmedin"
+#YANLIÃ…Â YAZILIRSA
+Write-Host "GeÃ§erli sÃ¼rÃ¼cÃ¼ belirtmedin"
 Start-Sleep -Seconds 2
 DisplayMenu
 }

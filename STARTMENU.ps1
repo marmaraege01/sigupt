@@ -11,8 +11,16 @@ Switch ($MENU) {
 D {
 Start "./SGD.bat"
 }
+
+E {
+Start "./SGE.bat"
+}
+
+F {
+Start "./SGF.bat"
+}
 default {
-#YANLIÅ YAZILIRSA
+#YANLIŞ YAZILIRSA
 Write-Host "Geçerli sürücü belirtmedin"
 Start-Sleep -Seconds 2
 DisplayMenu

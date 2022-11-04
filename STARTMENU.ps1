@@ -21,7 +21,7 @@ Start "./SGF.bat" -Wait -NoNewWindow
 }
 
 G {
-Start "./SGG.bat" -Wait -NoNewWindow
+Start "SGG.bat" -Wait -NoNewWindow
 }
 default {
 #YANLIŞ YAZILIRSA

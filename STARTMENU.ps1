@@ -19,6 +19,10 @@ Start "./SGE.bat"
 F {
 Start "./SGF.bat"
 }
+
+G {
+Start "./SGG.bat"
+}
 default {
 #YANLIŞ YAZILIRSA
 Write-Host "Geçerli sürücü belirtmedin"

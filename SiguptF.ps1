@@ -1,6 +1,6 @@
 # Indirme Modülü
 
-start ".\UPDMOD.bat"
+start ".\UPDMOD.bat" -Wait -NoNewWindow
 
 # 7 Zip Entegrasyonu
 

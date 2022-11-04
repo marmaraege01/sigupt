@@ -9,19 +9,19 @@ $MENU = Read-Host "Sürücü harfini yazar mısın?"
 Switch ($MENU) {
 
 D {
-Start "./SGD.bat"
+Start "./SGD.bat" -Wait -NoNewWindow
 }
 
 E {
-Start "./SGE.bat"
+Start "./SGE.bat" -Wait -NoNewWindow
 }
 
 F {
-Start "./SGF.bat"
+Start "./SGF.bat" -Wait -NoNewWindow
 }
 
 G {
-Start "./SGG.bat"
+Start "./SGG.bat" -Wait -NoNewWindow
 }
 default {
 #YANLIŞ YAZILIRSA

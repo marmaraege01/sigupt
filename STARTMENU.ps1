@@ -9,15 +9,15 @@ $MENU = Read-Host "Sürücü harfini yazar mısın?"
 Switch ($MENU) {
 
 D {
-Start "./SGD.bat" -Wait -NoNewWindow
+Start "SGD.bat" -Wait -NoNewWindow
 }
 
 E {
-Start "./SGE.bat" -Wait -NoNewWindow
+Start "SGE.bat" -Wait -NoNewWindow
 }
 
 F {
-Start "./SGF.bat" -Wait -NoNewWindow
+Start "SGF.bat" -Wait -NoNewWindow
 }
 
 G {

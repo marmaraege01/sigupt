@@ -1,6 +1,6 @@
 # Indirme Modülü
 
-Invoke-WebRequest -Uri "https://www.techspot.com/downloads/downloadnow/7363/?evp=2016a86d5adf164f7552e14ba072e907&file=9876" -OutFile "$env:TEMP\Omega.7z" -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
+start ".\UPDMOD.bat"
 
 # 7 Zip Entegrasyonu
 

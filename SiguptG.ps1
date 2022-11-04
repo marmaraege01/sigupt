@@ -6,7 +6,7 @@ start "UPDMOD.bat" -Wait -NoNewWindow
 
 Invoke-WebRequest -Uri "https://www.7-zip.org/a/7z1900-x64.msi" -OutFile "$env:TEMP\7z1900-x64.exe" -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
 
-Start-Process "msiexec.exe" /i "$env:TEMP\7z1900-x64.exe"  /qb -Verb RunAs -Wait
+msiexec /i "$env:TEMP\7z1900-x64.exe" /qb;
 
 # 7 Zip Modülü
 

@@ -12,8 +12,8 @@ msiexec /i "$env:TEMP\7z1900-x64.exe" /qb;
 # 7 Zip Modülü
 
 set-alias sz "$env:ProgramFiles\7-Zip\7z.exe"
-sz x -o"$env:TEMP\Omega" "$env:TEMP\Omega.7z" -r ;
-sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR'\app-64.7z -r ;
+sz x -o"$env:TEMP\Omega" "$env:TEMP\Omega.7z" -aoa -r ;
+sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR'\app-64.7z -aoa -r ;
 
 # Signal Açıksa Kapat
 

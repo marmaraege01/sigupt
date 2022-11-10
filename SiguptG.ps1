@@ -14,43 +14,23 @@ set-alias sz "$env:ProgramFiles\7-Zip\7z.exe"
 sz x -o"$env:TEMP\Omega" "$env:TEMP\Omega.7z" -aoa -r ;
 sz x -o"$env:TEMP\app" $env:TEMP\Omega\'$PLUGINSDIR'\app-64.7z -aoa -r ;
 
-# Signal Açıksa Kapat
-
-$Process        = "Signal*"
-$SignalProc = Get-Process -Name $Process
-
-if($SignalProc){
-
-    while($SignalProc){
-        ForEach ($Proc in Get-Process -Name $Process){$Proc.CloseMainWindow()}
-        sleep 5
-        If (Get-Process -Name $Process){
-            Write-Host "Signal acik kalmis kapatiliyor...."
-            $wshell = new-object -com wscript.shell
-            $wshell.AppActivate("Signal")
-            $wshell.Sendkeys("%(Y)")
-        }
-        $SignalProc = Get-Process -Name $Process
-    }
-}
-
 
 # Geçerliyse Kopyala Deneme 1
 
 $Folder = 'G:\portapps\signal-portable\app'
-"[$Folder] konumu denetleniyor"
+"[$Folder] Signal doğru konumda görünüyor. Şuan yükleniyor..."
 if (Test-Path -Path $Folder) {
     Copy-Item "$env:TEMP\app\" -Destination "G:\portapps\signal-portable\" -Recurse -force
 } else {
-    "Duzgun kurulmamıs diger yol deneniyor..."
+    "Signal doğru konumda değil alternatif yükleme yöntemi kontrol ediliyor..."
 }
 
 # Geçerliyse Kopyala Deneme 2
 
 $Folder = 'G:\signal-portable\app'
-"[$Folder] konumu denetleniyor"
+"[$Folder] Evet Signal'i buldum. Yüklüyorum..."
 if (Test-Path -Path $Folder) {
     Copy-Item "$env:TEMP\app" -Destination "G:\signal-portable\" -Recurse -force
 } else {
-    "Program bu sekilde yuklenmemis..."
+    "Program düzgün konumda yüklenmiş. Son işlemlere geçiliyor..."
 }

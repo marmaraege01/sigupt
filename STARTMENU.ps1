@@ -1,8 +1,11 @@
 function DisplayMenu {
 Write-Host @"
 
-FLASH SÜRÜCÜNÜZÜN HARFİ NEDİR?
+--Signal'in En Son Sürümü 6.1.0 Güncellemesi--
+
+KURULAN SÜRÜCÜNÜZÜN HARFİ NEDİR?
 Örneğin D,E,F,G bunlardan birisi olabilir.
+
 "@
 
 $MENU = Read-Host "Sürücü harfini yazar mısın?"

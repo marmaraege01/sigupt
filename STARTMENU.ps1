@@ -1,7 +1,7 @@
 function DisplayMenu {
 Write-Host @"
 
---Signal'in En Son Sürümü 6.23.0 Güncellemesi--
+--Signal'in En Son Sürümü 6.24.0 Güncellemesi--
 Eklenme tarihi: 1.7.2023
 
 KURULAN SÜRÜCÜNÜZÜN HARFİ NEDİR?

@@ -1,3 +1,3 @@
 # Indirme Modülü
 
-Invoke-WebRequest -Uri "https://updates.signal.org/desktop/signal-desktop-win-6.24.0.exe" -OutFile "$env:TEMP\Omega.7z" -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
+Invoke-WebRequest -Uri "https://updates.signal.org/desktop/signal-desktop-win-6.25.0.exe" -OutFile "$env:TEMP\Omega.7z" -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome

@@ -2,7 +2,7 @@ function DisplayMenu {
 Write-Host @"
 
 --Signal'in En Son Sürümü 6.45.1 Güncellemesi--
-Eklenme tarihi: 8.11.2023
+Eklenme tarihi: 6.2.2024
 
 KURULAN SÜRÜCÜNÜZÜN HARFİ NEDİR?
 Örneğin D,E,F,G bunlardan birisi olabilir.
